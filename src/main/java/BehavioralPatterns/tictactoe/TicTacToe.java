@@ -12,18 +12,15 @@ public class TicTacToe {
 
     Board board;
     Deque<Player> players;
-    public TicTacToe(int size){
-        init(size);
-    }
-
-    private void init(int size){
-
+    public TicTacToe(int size)
+    {
         players = new LinkedList<>();
         board = new Board(size);
-        Player player1 = new Player("Ravi", new PlayingPieceX());
-        Player player2 = new Player("Kant", new PlayingPieceO());
-        players.add(player1);
-        players.add(player2);
+    }
+
+
+    public void addPlayers(Player player){
+        players.add(player);
     }
 
     public String playGame(){

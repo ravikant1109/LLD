@@ -1,6 +1,6 @@
 package main.java.BehavioralPatterns.strategypattern;
 
-public class Rider {
+public class Main {
     public static void main(String[] args) {
 
         Vehicle vehicle = new SportsVehcile();
