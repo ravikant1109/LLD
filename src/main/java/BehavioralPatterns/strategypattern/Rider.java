@@ -1,3 +1,4 @@
+package main.java.BehavioralPatterns.strategypattern;
 
 public class Rider {
     public static void main(String[] args) {

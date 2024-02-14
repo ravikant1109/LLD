@@ -1,4 +1,4 @@
-package strategy;
+package main.java.BehavioralPatterns.strategypattern.strategy;
 
 public class SportsDriving implements DrivingStrategy {
 

@@ -1,6 +1,6 @@
-//package strategypattern;
+package main.java.BehavioralPatterns.strategypattern;
 
-import strategy.NormalDriving;
+import main.java.BehavioralPatterns.strategypattern.strategy.NormalDriving;
 
 public class DailyCommuter extends Vehicle {
 

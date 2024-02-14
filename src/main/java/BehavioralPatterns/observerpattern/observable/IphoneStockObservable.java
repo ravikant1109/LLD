@@ -1,9 +1,11 @@
-package observerpattern.observable;
+package main.java.BehavioralPatterns.observerpattern.observable;
+
+import main.java.BehavioralPatterns.observerpattern.Observers;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import observerpattern.Observers;
+
 public class IphoneStockObservable implements StockObservable {
 
     List<Observers> observersList;

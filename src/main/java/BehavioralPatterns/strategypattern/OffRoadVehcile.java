@@ -1,4 +1,7 @@
-import strategy.SportsDriving;
+package main.java.BehavioralPatterns.strategypattern;
+
+
+import main.java.BehavioralPatterns.strategypattern.strategy.SportsDriving;
 
 public class OffRoadVehcile extends Vehicle{
 

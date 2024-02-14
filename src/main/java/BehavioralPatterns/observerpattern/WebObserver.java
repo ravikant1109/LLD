@@ -1,4 +1,4 @@
-package observerpattern;
+package main.java.BehavioralPatterns.observerpattern;
 
 
 import java.security.PublicKey;

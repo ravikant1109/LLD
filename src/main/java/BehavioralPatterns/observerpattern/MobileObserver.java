@@ -1,4 +1,4 @@
-package observerpattern;
+package main.java.BehavioralPatterns.observerpattern;
 
 public class MobileObserver implements Observers{
 
@@ -13,4 +13,5 @@ public class MobileObserver implements Observers{
     public void update(String property) {
         System.out.format("Hi user:%s, you know what %s is back in stock\n", phoneNumber,property);
     }
+
 }

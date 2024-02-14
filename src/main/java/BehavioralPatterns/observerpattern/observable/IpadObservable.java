@@ -1,6 +1,6 @@
-package observerpattern.observable;
+package main.java.BehavioralPatterns.observerpattern.observable;
 
-import observerpattern.Observers;
+import main.java.BehavioralPatterns.observerpattern.Observers;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,10 @@
-package observerpattern;
+package main.java.BehavioralPatterns.observerpattern;
 
-import observerpattern.observable.IpadObservable;
-import observerpattern.observable.IphoneStockObservable;
-import observerpattern.observable.StockObservable;
+
+import main.java.BehavioralPatterns.observerpattern.observable.IpadObservable;
+import main.java.BehavioralPatterns.observerpattern.observable.IphoneStockObservable;
+import main.java.BehavioralPatterns.observerpattern.observable.StockObservable;
+
 
 public class Stock {
     public static void main(String[] args) {

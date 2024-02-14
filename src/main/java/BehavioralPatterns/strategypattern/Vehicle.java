@@ -1,4 +1,6 @@
-import strategy.DrivingStrategy;
+package main.java.BehavioralPatterns.strategypattern;
+
+import main.java.BehavioralPatterns.strategypattern.strategy.DrivingStrategy;
 
 public class Vehicle {
     DrivingStrategy drivingStrategy;
