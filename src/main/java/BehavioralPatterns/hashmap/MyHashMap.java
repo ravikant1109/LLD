@@ -5,7 +5,7 @@ public class MyHashMap<K, V> {
     private static final int INITIAL_SIZE = 1<<4;
     private static final int MAXIMUM_SIZE = 1<<30;
 
-    private Entry[] hashMap;
+    private final Entry<K, V>[] hashMap;
 
     public MyHashMap(){
         hashMap = new Entry[INITIAL_SIZE];
@@ -43,11 +43,11 @@ public class MyHashMap<K, V> {
         int hash = key.hashCode()%hashMap.length;
 
         if (hashMap[hash] == null){
-            hashMap[hash] = new Entry(key, value);
+            hashMap[hash] = new Entry<>(key, value);
         }
         else{
-            Entry prev = hashMap[hash];
-            Entry cur = prev;
+            Entry<K, V> prev = hashMap[hash];
+            Entry<K, V> cur = prev;
             while(cur != null){
                 if (cur.key == key){
                     cur.value = value;
@@ -56,7 +56,8 @@ public class MyHashMap<K, V> {
                 prev = cur;
                 cur = cur.next;
             }
-            prev.next = new Entry(key, value);
+            assert prev != null;
+            prev.next = new Entry<>(key, value);
         }
     }
 
@@ -73,4 +74,5 @@ public class MyHashMap<K, V> {
             return (V) cur.value;
         }
     }
+
 }

@@ -8,8 +8,8 @@ import main.java.BehavioralPatterns.tictactoe.model.PlayingPieceX;
 public class Main {
     public static void main(String[] args) {
         TicTacToe ticTacToe = new TicTacToe(3);
-        ticTacToe.addPlayers(new Player("Ravi", new PlayingPieceX()));
-        ticTacToe.addPlayers(new Player("Aman", new PlayingPieceO()));
+        ticTacToe.addPlayers(new Player("A man", new PlayingPieceX()));
+        ticTacToe.addPlayers(new Player("Ravi", new PlayingPieceO()));
         System.out.println("Winner of the game is " + ticTacToe.playGame());
     }
 }

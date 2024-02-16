@@ -3,7 +3,7 @@ package main.java.BehavioralPatterns.hashmap;
 public class Main {
 
     public static void main(String[] args) {
-        MyHashMap<Integer, String> myHashMap = new MyHashMap<Integer, String>(5);
+        MyHashMap<Integer, String> myHashMap = new MyHashMap<>(5);
         myHashMap.put(1,"Ravi");
         myHashMap.put(2,"kant");
         myHashMap.put(3,"Aman");

@@ -96,8 +96,8 @@ public class Board {
                 break;
             }
         }
-        for( int i = size-1 ; i >= 0 ; i--){
-            if ((board[i][i] == null) || (board[i][i] != pieceType)){
+        for( int i = size-1, j = 0 ; i >= 0 && j < size ; i--, j++){
+            if ((board[i][j] == null) || (board[i][j] != pieceType)){
                 checkSecondaryDiagonal = false;
                 break;
             }
