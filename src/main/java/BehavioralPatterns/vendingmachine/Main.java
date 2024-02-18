@@ -21,6 +21,7 @@ public class Main {
                 System.out.println("|");
 
                 State vendingState = vendingMachine.getMachineState();
+                vendingState.getChange(100);
                 vendingState.clickOnInsertCoinButton(vendingMachine);
 
                 vendingState = vendingMachine.getMachineState();
@@ -40,6 +41,7 @@ public class Main {
 
             }
             catch (Exception e){
+                System.out.println("Exception: " + e.getMessage());
                 displayInventory(vendingMachine);
             }
 

@@ -40,7 +40,6 @@ public class HasMoneyState implements State{
     @Override
     public List<Coin> fullRefund(VendingMachine vendingMachine) throws Exception {
         List<Coin> refund = vendingMachine.getCoinList();
-
         System.out.println("Returning full amount in money tray" + vendingMachine.getTotalAmount());
         vendingMachine.setMachineState(new IdleState());
         return refund;
