@@ -2,14 +2,15 @@ package main.java.BehavioralPatterns.chess.model;
 
 import static java.lang.Math.abs;
 
-public class Knight extends PlayingPiece{
-    public Knight(int x, int y, PieceType pieceType, PieceColor pieceColor) {
-        super(x, y, pieceType, pieceColor);
+public class Knight extends Piece {
+    public Knight(PieceType pieceType, PieceColor pieceColor) {
+        super(pieceType, pieceColor);
     }
 
     @Override
-    public boolean isValidMove(int x, int y) {
-        return (abs(this.x - x) == 1 && abs(this.y - y) == 2) || (abs(this.x - x) == 2 && abs(this.y - y) == 1);
+    public boolean isValidMove(int curX, int curY, int x, int y) {
+        return (abs(curX - x) == 1 && abs(curY - y) == 2) || (abs(curX - x) == 2
+                && abs(curY - y) == 1);
     }
 
 }

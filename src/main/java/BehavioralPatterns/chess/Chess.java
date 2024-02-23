@@ -45,7 +45,7 @@ public class Chess {
                 players.addFirst(curPlayer);
                 continue;
             }
-            if(chessBoard.board[curX][curY].getPieceColor() != curPlayer.getPieceColor()){
+            if(chessBoard.board[curX][curY].getPiece().getPieceColor() != curPlayer.getPieceColor()){
                 System.out.println("Invalid move, please move correct piece color: " + curPlayer.getPieceColor());
                 players.addFirst(curPlayer);
                 continue;
@@ -69,8 +69,8 @@ public class Chess {
     public boolean checkWinner(Player player){
         for(int i = 0; i < 8; i++){
             for( int j = 0; j < 8 ; j++){
-                if (chessBoard.board[i][j] != null && chessBoard.board[i][j].getPieceType()  == PieceType.KING
-                        && chessBoard.board[i][j].getPieceColor() == player.getPieceColor()){
+                if (chessBoard.board[i][j] != null && chessBoard.board[i][j].getPiece().getPieceType()  == PieceType.KING
+                        && chessBoard.board[i][j].getPiece().getPieceColor() == player.getPieceColor()){
                     return false;
                 }
             }
