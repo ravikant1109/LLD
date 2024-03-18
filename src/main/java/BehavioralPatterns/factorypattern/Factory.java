@@ -8,7 +8,7 @@ public class Factory {
             case "CIRCLE" -> new Circle();
             case "RECTANGLE" -> new Rectangle();
             case "TRIANGLE" -> new Triangle();
-            default -> null;
+            default -> new Null();
         };
     }
 }
