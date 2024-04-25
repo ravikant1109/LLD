@@ -1,0 +1,7 @@
+create_parking_lot PR1234 2 6
+display free_slots BIKE
+display free_slots CAR
+display occupied_slots BIKE
+display occupied_slots CAR
+park_vehicle CAR KA-01-DB-1234 black
+unpark_vehicle PR1234_2_5

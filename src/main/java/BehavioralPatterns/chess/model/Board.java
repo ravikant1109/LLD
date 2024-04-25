@@ -38,11 +38,13 @@ public class Board {
     }
 
     public void move(int curX, int curY, int tarX, int tarY){
-        board[curX][curY].setX(tarX);
-        board[curX][curY].setY(tarY);
-        board[tarX][tarY] = board[curX][curY];
+        Cell cell = board[curX][curY];
+        cell.setX(tarX);
+        cell.setY(tarY);
+        board[tarX][tarY] = cell;
         board[curX][curY] = null;
     }
+
 
     public void printBoard(){
 
